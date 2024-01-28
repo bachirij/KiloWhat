@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module1/blog-module1.html">
+                        <img
+                          src="../../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module2/blog-module2.html">
+                        <img
+                          src="../../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module3/blog-module3.html">
+                        <img
+                          src="../../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module4/blog-module4.html">
+                        <img
+                          src="../../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module5/blog-module5.html">
+                        <img
+                          src="../../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module6/blog-module6.html">
+                        <img
+                          src="../../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="../../quiz/quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-blog">
+        <section class="wrapper">
+            <h1 class="h1__wrapper">MODULE 5</h1>
+            <p class="p__wrapper">LE MAGNÉTISME</p>
+      
+            <div class="faq">
+              <button class="accordion">
+                C’est quoi le magnétisme ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <img
+                class="img__faq"
+                src="../../images/modules/m5img1.png"
+                width="300"
+                height="150"
+                alt="Inc Logo"
+                />
+                <p class="p__pannel">Le <strong>magnétisme</strong> est un phénomène naturel lié aux propriétés magnétiques des matériaux et à l'interaction entre les charges électriques en mouvement. Il se traduit par la présence de champs magnétiques exerçant une force d'attraction ou de répulsion sur d'autres objets magnétiques ou sur les particules chargées en déplacement.</p><br>
+                <p class="p__pannel">Certains matériaux, tels que le fer, le nickel, le cobalt et certains alliages, possèdent une <strong>magnétisation naturelle</strong> et peuvent générer un champ magnétique permanent lorsqu'ils sont aimantés. D'autres matériaux peuvent acquérir une magnétisation temporaire sous l'influence d'un champ magnétique extérieur.</p><br>
+                <p class="p__pannel">Les aimants, les objets magnétiques et les courants électriques en mouvement produisent des champs magnétiques. Un <strong>champ magnétique</strong> constitue une zone de l'espace où une force magnétique peut agir sur un objet magnétique ou sur une particule chargée en déplacement.</p>
+                <img
+                class="img__faq"
+                src="../../images/modules/m5img2.png"
+                width="300"
+                height="150"
+                alt="Inc Logo"
+                />
+                <p class="p__pannel">Les aimants possèdent <strong>deux pôles magnétiques</strong>, communément désignés pôle nord et pôle sud. Les pôles similaires (deux pôles nord ou deux pôles sud) se repoussent, tandis que les pôles opposés s'attirent. Par conséquent, les lignes de champ magnétique se déplacent du pôle nord vers le pôle sud.</p><br>
+                <p class="p__pannel">Le <strong>magnétisme</strong> trouve de nombreuses applications pratiques. Les aimants permanents sont utilisés dans des dispositifs tels que les haut-parleurs, les moteurs électriques, les serrures magnétiques et les instruments de navigation. Les électroaimants sont employés dans des équipements tels que les relais, les transformateurs, les scanners d'IRM, les générateurs électriques, entre autres.</p><br>
+                <p class="p__pannel">La Terre elle-même agit comme un immense aimant, possédant un pôle nord magnétique et un pôle sud magnétique. Le champ magnétique terrestre joue un rôle crucial dans la navigation et offre une protection contre les radiations solaires.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les liens entre le magnétisme et l’électricité.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <img
+                class="img__faq"
+                src="../../images/modules/m5img3.png"
+                width="300"
+                height="150"
+                alt="Inc Logo"
+                />
+                <p class="p__pannel">Le lien entre le magnétisme et l'électricité est étroitement lié et est fondamentalement compris grâce à <strong>l'électromagnétisme</strong>, une branche de la physique qui unifie ces deux phénomènes. Le lien entre le magnétisme et l'électricité est régi par les lois de l'électromagnétisme, qui ont été développées par plusieurs scientifiques au fil des siècles, dont André-Marie Ampère, Michael Faraday et James Clerk Maxwell. Ces 4 lois sont couramment connues comme étant les « <strong>lois de Maxwell</strong> ».</p><br>
+                <p class="p__pannel">Lorsqu'un courant électrique circule dans un fil conducteur, il génère un champ magnétique autour du fil. Plus le courant est intense, plus le champ magnétique est fort.</p><br>
+                <p class="p__pannel">Michael Faraday a découvert que le changement d'un champ magnétique près d'un circuit électrique peut induire une force électromotrice (f.e.m.) et donc un courant électrique dans le circuit. C'est ce qu'on appelle <strong>l'induction électromagnétique</strong>. Cette découverte a conduit au développement des générateurs électriques, qui convertissent l'énergie mécanique en électricité.</p><br>
+                <p class="p__pannel">Les équations de Maxwell, formulées par James Clerk Maxwell, ont unifié les lois de l'électricité et du magnétisme. Ces équations décrivent comment les <strong>champs électriques</strong> et <strong>magnétiques</strong> interagissent et se propagent. Elles ont établi que les variations des champs électriques induisent des champs magnétiques et vice versa, montrant ainsi que l'électricité et le magnétisme sont intimement liés.</p>
+                <img
+                class="img__faq"
+                src="../../images/modules/m5img4.png"
+                width="300"
+                height="150"
+                alt="Inc Logo"
+                /><br>
+                <p class="p__pannel">Les équations de Maxwell ont également prédit l'existence d'<strong>ondes électromagnétiques</strong>, qui sont des ondes qui se propagent dans l'espace sous forme de champs électriques et magnétiques oscillants. La lumière est un exemple d'onde électromagnétique. Les ondes radio, les micro-ondes, les rayons X et les rayons gamma sont d'autres exemples d'ondes électromagnétiques.</p><br>
+                <p class="p__pannel">L'électromagnétisme est à la base de nombreuses technologies, notamment la production, le transport et l'utilisation de l'électricité, la communication sans fil, la génération d'ondes radio, la tomographie par résonance magnétique (IRM), la télévision, les radars, les antennes, et bien d'autres.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                L’induction.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">L'<strong>induction</strong>, en physique, fait référence à un processus par lequel un objet ou un phénomène influence ou génère un autre objet ou phénomène sans contact physique direct. Ce processus est souvent observé dans le contexte de l'induction électromagnétique et de l'induction électromagnétique mutuelle.</p>
+                <img
+                class="img__faq"
+                src="../../images/modules/m5img5.png"
+                width="300"
+                height="150"
+                alt="Inc Logo"
+                />
+                <p class="p__pannel">L'<strong>induction électromagnétique</strong> est un phénomène qui se produit lorsque le changement d'un champ magnétique à proximité d'un conducteur crée une force électromotrice (f.e.m.) ou une tension électrique dans le conducteur. Cela peut entraîner un courant électrique à travers le conducteur.</p><br>
+                <p class="p__pannel">C'est le principe fondamental derrière les générateurs électriques, qui convertissent l'énergie mécanique en énergie électrique. L'expérience de Michael Faraday, réalisée en 1831, est l'un des exemples les plus célèbres d'induction électromagnétique. Elle a montré que le déplacement d'un aimant à proximité d'une bobine de fil peut générer un courant électrique dans la bobine.</p><br>
+                <p class="p__pannel">L'<strong>induction électromagnétique mutuelle</strong> est un phénomène similaire, mais il se produit entre deux bobines de fil placées à proximité l'une de l'autre. Lorsque le courant change dans une bobine, il génère un champ magnétique variable, ce qui à son tour induit une tension dans l'autre bobine, même en l'absence de contact électrique direct. Cela est à la base de nombreuses applications, telles que les transformateurs électriques, qui augmentent ou diminuent la tension électrique tout en conservant la puissance.</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="blog-nav-btn">
+          <a href="../module4/blog-module4.html">
+            <button class="btn-landing">REVENIR AU MODULE PRÉCÉDENT</button>
+          </a>
+          <a href="../../quiz/module5/quiz-module5.html">
+            <button class="btn-landing">FAIRE LE QUIZ DU MODULE 5</button>
+          </a>
+          <a href="../module6/blog-module6.html">
+            <button class="btn-landing">PASSER AU MODULE SUIVANT</button>
+          </a>
+        </section>
+
+        <footer>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../../../script.js"></script>
+    <script src="../blog.js"></script>
+</body>
+</html>

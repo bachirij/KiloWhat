@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module1/blog-module1.html">
+                        <img
+                          src="../../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module2/blog-module2.html">
+                        <img
+                          src="../../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module3/blog-module3.html">
+                        <img
+                          src="../../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module4/blog-module4.html">
+                        <img
+                          src="../../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module5/blog-module5.html">
+                        <img
+                          src="../../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module6/blog-module6.html">
+                        <img
+                          src="../../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="../../quiz/quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-blog">
+        <section class="wrapper">
+            <h1 class="h1__wrapper">MODULE 6</h1>
+            <p class="p__wrapper">LES RÉSEAUX ÉLECTRIQUES</p>
+      
+            <div class="faq">
+              <button class="accordion">
+                Différence entre puissance et énergie électrique.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">L'<strong>énergie électrique</strong> est une quantité totale de travail ou d'énergie que l'électricité peut produire ou consommer dans un certain laps de temps. Elle est mesurée en joules (J) ou en kilowattheures (kWh) dans le contexte de l'électricité.</p><br>
+                <p class="p__pannel">L'énergie électrique est une grandeur cumulative, ce qui signifie qu'elle s'accumule au fil du temps. Par exemple, lorsque vous laissez un appareil électronique fonctionner pendant une heure à une certaine puissance, l'énergie électrique consommée est mesurée en kilowattheures (kWh).</p><br>
+                <p class="p__pannel">La <strong>puissance électrique</strong> est une grandeur instantanée qui indique combien d'énergie est transférée (générée ou consommée) par unité de temps. Elle est mesurée en watts (W) ou en kilowatts (kW). Par exemple, une ampoule de 100 watts consomme ou produit 100 watts d'énergie électrique à un moment donné.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Le fonctionnement des réseaux électriques.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Le fonctionnement des réseaux électriques en France repose sur quatre étapes clés : <strong>la production</strong>, <strong>le transport</strong>, <strong>la distribution</strong> et <strong>la fourniture d'électricité</strong>. La production et la fourniture sont des activités concurrentielles, tandis que le transport et la distribution sont des activités régulées.</p><br>
+                <img
+                class="img__faq img-m6"
+                src="../../images/modules/m6.png"
+                width="500"
+                height="250"
+                alt="Inc Logo"
+                /><br>
+                <p class="p__pannel">La première étape concerne la <strong>production d'électricité</strong>, réalisée dans divers types de centrales électriques réparties sur le territoire français, incluant des centrales nucléaires, thermiques au charbon, au gaz naturel, au fioul, des centrales hydroélectriques, des parcs éoliens et des installations solaires. Ces centrales convertissent diverses sources d'énergie en électricité, avec une prédominance de la production nucléaire en France.</p><br>
+                <p class="p__pannel">Ensuite, l'électricité produite est transportée sur de longues distances via un réseau de lignes électriques à haute tension, permettant de minimiser les pertes d'énergie sur de grandes distances. Cette électricité est ensuite abaissée à une tension plus basse grâce à des transformateurs et distribuée à travers un réseau de lignes électriques de moyenne et basse tension pour atteindre les zones urbaines et rurales.</p><br>
+                <p class="p__pannel">Les consommateurs, qu'il s'agisse de ménages, d'entreprises ou d'usines, utilisent l'électricité pour alimenter leurs appareils, équipements et machines. La consommation d'électricité varie en fonction des besoins de chaque consommateur et de l'utilisation spécifique de l'électricité.</p><br>
+                <p class="p__pannel">Le réseau électrique est conçu pour maintenir en permanence <strong>l'équilibre entre la production et la consommation d'électricité</strong>. Les gestionnaires de réseaux électriques, tels que RTE (Réseau de Transport d'Électricité) pour la haute tension et les distributeurs locaux d'électricité pour la basse tension, surveillent en temps réel la demande d'électricité. Ils ajustent ensuite la production pour garantir un équilibre constant, assurant ainsi une disponibilité fiable de l'électricité pour répondre aux besoins de la société.</p><br>
+                <p class="p__pannel">Le bon fonctionnement du réseau électrique en France nécessite une coordination efficace entre la production, le transport, la distribution et la fourniture d'électricité, avec des acteurs compétitifs et régulés travaillant ensemble pour assurer une alimentation électrique fiable à l'échelle nationale.</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="blog-nav-btn">
+          <a href="../module5/blog-module5.html">
+            <button class="btn-landing">REVENIR AU MODULE PRÉCÉDENT</button>
+          </a>
+          <a href="../../quiz/module6/quiz-module6.html">
+            <button class="btn-landing">FAIRE LE QUIZ DU MODULE 6</button>
+          </a>
+        </section>
+
+        <footer>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../../../script.js"></script>
+    <script src="../blog.js"></script>
+</body>
+</html>

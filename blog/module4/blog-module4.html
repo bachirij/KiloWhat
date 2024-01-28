@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module1/blog-module1.html">
+                        <img
+                          src="../../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module2/blog-module2.html">
+                        <img
+                          src="../../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module3/blog-module3.html">
+                        <img
+                          src="../../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module4/blog-module4.html">
+                        <img
+                          src="../../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module5/blog-module5.html">
+                        <img
+                          src="../../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module6/blog-module6.html">
+                        <img
+                          src="../../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="../../quiz/quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-blog">
+        <section class="wrapper">
+            <h1 class="h1__wrapper">MODULE 4</h1>
+            <p class="p__wrapper">LES COMPOSANTS DE BASE DES CIRCUITS ÉLECTRIQUES</p>
+      
+            <div class="faq">
+              <button class="accordion">
+                Sources de courant et de tension.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Une <strong>source de tension</strong> est un composant électrique capable de fournir une différence de potentiel électrique (tension) entre ses bornes. Elle maintient généralement une <strong>tension constante</strong>, indépendamment du courant circulant à travers elle. Les piles et les générateurs sont des exemples de sources de tension. La tension est mesurée en volts (V).</p><br>
+                <p class="p__pannel">Une <strong>source de courant</strong> est un composant électrique capable de fournir un <strong>courant électrique constant</strong>, indépendamment de la tension à ses bornes. Un exemple courant de source de courant est un générateur de courant. Le courant est mesuré en ampères (A).</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Convention générateur et récepteur.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Un <strong>composant générateur</strong> est un élément d'un circuit électrique qui <strong>fournit de l'énergie électrique</strong> au circuit, tandis qu'un <strong>composant récepteur</strong> est un élément qui <strong>absorbe cette énergie</strong>. Ces termes dépendent de la <strong>convention générateur/récepteur </strong>:</p><br>
+                <p class="p__pannel">Pour une <strong>source de tension</strong>, la borne positive est considérée comme la borne du générateur (qui fournit de l'énergie), et la borne négative est considérée comme la borne du récepteur (qui absorbe l'énergie).</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m4img1.png"
+                    width="200"
+                    height="120"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Pour un <strong>composant passif</strong> (comme une résistance), la borne où le courant entre est considérée comme la borne du récepteur.</p><br>
+                <p class="p__pannel">Cependant, ces termes sont relatifs à la direction du courant dans le circuit et ne définissent pas intrinsèquement la nature du composant, car la plupart des composants peuvent agir comme générateurs ou récepteurs selon la configuration du circuit.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les résistances.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <img
+                class="img__faq"
+                src="../../images/modules/m4img2.png"
+                width="350"
+                height="190"
+                alt="Inc Logo"
+                />
+                <p class="p__pannel">En électricité et en électronique, une <strong>résistance</strong> est un composant électrique passif conçu pour limiter le passage du courant électrique à travers un circuit. Elle est généralement conçue pour avoir une valeur de résistance électrique spécifique, mesurée en <strong>ohms (Ω)</strong>, qui détermine la quantité de courant électrique qui peut passer à travers elle en réponse à une tension appliquée.</p><br>
+                <p class="p__pannel">Une résistance est utilisée pour <strong>contrôler le courant électrique</strong> dans un circuit. Elle crée une opposition au passage du courant, ce qui entraîne une chute de tension à travers elle. La valeur de résistance d'une résistance est sa principale caractéristique. Elle est mesurée en ohms (Ω).</p><br>
+                <p class="p__pannel">Une résistance de 100 ohms, par exemple, limite le courant de manière plus importante qu'une résistance de 1 000 ohms.</p><br>
+                <p class="p__pannel">Pour identifier la valeur de résistance d'une résistance, un <strong>code de couleurs</strong> est souvent utilisé. Les bandes colorées situées sur le corps de la résistance indiquent sa valeur. En déchiffrant ces couleurs, on peut déterminer la valeur de la résistance. Les résistances ont également une <strong>puissance nominale en watts (W)</strong> qui indique la quantité de chaleur qu'elles peuvent dissiper en toute sécurité sans surchauffe.</p><br>
+                <p class="p__pannel">Les résistances sont couramment utilisées dans diverses applications, notamment pour ajuster le courant dans des circuits, diviser la tension, protéger les composants électroniques de la surtension, créer des filtres de fréquence, et bien d'autres.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les capacités.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <img
+                class="img__faq"
+                src="../../images/modules/m4img3.png"
+                width="350"
+                height="190"
+                alt="Inc Logo"
+                />
+                <p class="p__pannel">Une <strong>capacité</strong>, en électronique, est un composant électrique passif utilisé pour stocker et libérer de l'énergie électrique sous forme de charge électrique. Elle est également souvent appelée condensateur. </p><br>
+                <p class="p__pannel">La principale fonction d'un condensateur est de <strong>stocker de l'énergie électrique</strong> sous forme de charge électrique. Il peut accumuler des charges sur ses plaques lorsque la tension est appliquée et les libérer lorsque cela est nécessaire. </p><br>
+                <p class="p__pannel">Un <strong>condensateur</strong> est composé de deux plaques conductrices séparées par un matériau diélectrique, qui est un isolant électrique. Les plaques et le diélectrique sont enroulés ou disposés de manière à former un composant compact.</p><br>
+                <p class="p__pannel">La capacité d'un condensateur est mesurée en <strong>farads (F)</strong>. </p><br>
+                <p class="p__pannel">Un condensateur de 1 farad stocke une charge de 1 coulomb (unité de charge électrique) lorsqu'une tension de 1 volt est appliquée. Cependant, les condensateurs les plus couramment utilisés ont des capacités en microfarads (μF), nanofarads (nF) ou picofarads (pF). </p><br>
+                <p class="p__pannel">Lorsqu'une tension est appliquée aux bornes d'un condensateur, il se charge en accumulant des charges sur ses plaques. Lorsque le condensateur est déconnecté de la source de tension, il peut libérer cette charge, fournissant ainsi de l'énergie électrique stockée. </p><br>
+                <p class="p__pannel">Les condensateurs sont utilisés dans de nombreuses applications électroniques, notamment pour stabiliser la tension, filtrer les signaux, temporiser des événements, stocker de l'énergie de démarrage (comme dans les moteurs), éliminer les interférences électromagnétiques, et bien plus encore. </p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les inductances (bobines).
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <img
+                class="img__faq"
+                src="../../images/modules/m4img4.png"
+                width="350"
+                height="190"
+                alt="Inc Logo"
+                />
+                <p class="p__pannel">Une <strong>inductance</strong>, souvent appelée <strong>bobine</strong>, est un composant électrique passif qui est utilisé pour <strong>stocker de l'énergie magnétique</strong> et influencer le comportement des courants électriques dans un circuit. Elle est composée d'un fil enroulé autour d'un noyau magnétique, et sa principale caractéristique est l'inductance, mesurée en <strong>henrys (H)</strong>. </p><br>
+                <p class="p__pannel">Une inductance de 1 henry signifie qu'elle stocke 1 joule d'énergie magnétique par ampère de courant. Lorsque le courant électrique traverse une inductance, il crée un <strong>champ magnétique</strong> autour de la bobine.</p><br>
+                <p class="p__pannel">Si le courant change, l'inductance <strong>s'oppose à ce changement</strong>, ce qui se traduit par une opposition au passage du courant alternatif (AC). Cependant, dans un circuit en courant continu (DC), une fois que l'inductance a atteint un état stable, elle se comporte comme un court-circuit.</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="blog-nav-btn">
+          <a href="../module3/blog-module3.html">
+            <button class="btn-landing">REVENIR AU MODULE PRÉCÉDENT</button>
+          </a>
+          <a href="../../quiz/module4/quiz-module4.html">
+            <button class="btn-landing">FAIRE LE QUIZ DU MODULE 4</button>
+          </a>
+          <a href="../module5/blog-module5.html">
+            <button class="btn-landing">PASSER AU MODULE SUIVANT</button>
+          </a>
+        </section>
+
+        <footer>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../../../script.js"></script>
+    <script src="../blog.js"></script>
+</body>
+</html>
