@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module1/blog-module1.html">
+                        <img
+                          src="../../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module2/blog-module2.html">
+                        <img
+                          src="../../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module3/blog-module3.html">
+                        <img
+                          src="../../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module4/blog-module4.html">
+                        <img
+                          src="../../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module5/blog-module5.html">
+                        <img
+                          src="../../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module6/blog-module6.html">
+                        <img
+                          src="../../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="../../quiz/quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-blog">
+        <section class="wrapper">
+            <h1 class="h1__wrapper">MODULE 3</h1>
+            <p class="p__wrapper">LES BASES DES CIRCUITS ÉLECTRIQUES</p>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les branchements en série et en parallèle.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Les <strong>branchements en série</strong> et <strong>en parallèle</strong> sont deux configurations courantes utilisées dans les circuits électriques pour <strong>connecter des composants</strong> tels que des résistances, des ampoules, des appareils électriques, etc.</p><br>
+                <p class="p__pannel">Dans un circuit <strong>en série</strong>, les composants sont connectés les uns après les autres, de sorte que le courant électrique doit traverser chacun d'eux en séquence. Les composants sont disposés <strong>sur le même chemin</strong>. Le courant électrique est le <strong>même</strong> à travers tous les composants en série. Cela signifie que le courant est constant dans tout le circuit. La <strong>tension électrique totale</strong> dans un circuit en série est <strong>la somme des tensions</strong> à travers chaque composant.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m3img1.png"
+                    width="200"
+                    height="100"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Dans un <strong>circuit en parallèle</strong>, les composants sont connectés de manière à ce que chacun d'eux soit relié directement à la source d'alimentation. Les composants sont disposés de manière <strong>parallèle</strong>, offrant plusieurs chemins pour le courant électrique. Le courant électrique se divise entre les différents composants en parallèle. Chaque composant reçoit une partie du courant total.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m3img2.png"
+                    width="300"
+                    height="150"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">La <strong>tension électrique</strong> à travers chaque composant en parallèle est la <strong>même</strong>. Tous les composants ont la même tension aux bornes.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les lois de Kirchhoff.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Les <strong>lois de Kirchhoff</strong> sont deux principes fondamentaux en électricité qui décrivent la <strong>conservation de la charge électrique et de l'énergie</strong> dans un circuit électrique complexe. Ces lois sont nommées d'après Gustav Kirchhoff, un physicien allemand du 19e siècle.</p><br>
+                <p class="p__pannel">Les deux lois de Kirchhoff sont les suivantes :</p><br>
+                <p class="p__pannel"><strong>Loi des courants de Kirchhoff (loi des noeuds) :</strong></p><br>
+                <p class="p__pannel">Cette loi stipule que la <strong>somme algébrique des courants entrants et sortants à un nœud</strong> d'un circuit électrique est <strong>égale à zéro</strong>. En d'autres termes, la loi des courants de Kirchhoff affirme que la charge électrique ne s'accumule ni ne se perd au niveau d'un nœud. Cette loi garantit que <strong>la charge électrique est conservée</strong>, de sorte que la somme des courants entrants est égale à la somme des courants sortants à tout nœud dans un circuit.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m3img3.png"
+                    width="300"
+                    height="200"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel"><strong>Loi des tensions de Kirchhoff (loi des mailles) :</strong></p><br>
+                <p class="p__pannel">La <strong>loi des tensions</strong> de Kirchhoff énonce que dans une <strong>boucle fermée</strong> d'un circuit électrique, <strong>la somme algébrique des tensions</strong> appliquées sur chaque composant (résistance, pile, etc.) <strong>est égale à zéro</strong>. Cette loi reflète la <strong>conservation de l'énergie électrique</strong> dans un circuit. En d'autres termes, la somme des chutes de tension le long d'une boucle est égale à la somme des élévations de tension dans la boucle.</p><br>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m3img4.png"
+                    width="300"
+                    height="200"
+                    alt="Inc Logo"
+                />
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les différences entre les circuits AC et DC.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Le courant alternatif (AC) et le courant continu (DC) sont deux types de courants électriques qui diffèrent principalement par la manière dont les charges électriques se déplacent et la nature de leur tension.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m3img5.png"
+                    width="450"
+                    height="300"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Dans un <strong>circuit à courant alternatif</strong>, les charges électriques (généralement des électrons) <strong>se déplacent dans des directions qui changent périodiquement</strong>. Le courant inverse sa direction à intervalles réguliers, ce qui signifie que les électrons oscillent d'un côté à l'autre dans le conducteur. La tension dans un circuit à courant alternatif change de polarité à intervalles réguliers, créant une forme d'onde sinusoïdale.</p><br>
+                <p class="p__pannel">La tension atteint un pic positif, puis traverse zéro, devient négative, traverse à nouveau zéro, et revient à son maximum positif. C'est ce que l'on appelle une <strong>tension alternative</strong>. La fréquence du courant alternatif, mesurée en hertz (Hz), indique le nombre de cycles complets de changement de polarité par seconde.</p><br>
+                <p class="p__pannel">Dans de nombreux pays, la fréquence standard est de 50 ou 60 Hz. En France, la fréquence standard est de 50 Hz (hertz). Le courant alternatif est largement utilisé pour la transmission de l'électricité sur de longues distances à partir des centrales électriques. Il est également couramment utilisé dans les appareils ménagers et l'éclairage public.</p><br>
+                <p class="p__pannel">Dans un <strong>circuit à courant continu</strong>, les charges électriques <strong>se déplacent toujours dans la même direction</strong>, de la borne positive à la borne négative de la source d'alimentation. La <strong>tension</strong> dans un circuit à courant continu reste <strong>constante</strong> dans le temps. Elle ne change pas de polarité de manière régulière. Le courant continu est caractérisé par sa stabilité.</p><br>
+                <p class="p__pannel">Il est utilisé dans de nombreuses applications électroniques où une tension constante est nécessaire, comme les piles, les batteries, les circuits électroniques, et les dispositifs électroniques tels que les ordinateurs. Le courant continu est couramment utilisé dans les appareils électroniques et les dispositifs portables, tels que les téléphones portables, les ordinateurs portables, les lecteurs MP3, et les véhicules électriques. Il est également utilisé pour le stockage d'énergie dans les batteries.</p>
+            </div>
+        </section>
+
+        <section class="blog-nav-btn">
+          <a href="../module2/blog-module2.html">
+            <button class="btn-landing">REVENIR AU MODULE PRÉCÉDENT</button>
+          </a>
+          <a href="../../quiz/module3/quiz-module3.html">
+            <button class="btn-landing">FAIRE LE QUIZ DU MODULE 3</button>
+          </a>
+          <a href="../module4/blog-module4.html">
+            <button class="btn-landing">PASSER AU MODULE SUIVANT</button>
+          </a>
+        </section>
+
+        <footer>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../../../script.js"></script>
+    <script src="../blog.js"></script>
+</body>
+</html>

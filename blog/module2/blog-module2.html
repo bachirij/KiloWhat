@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module1/blog-module1.html">
+                        <img
+                          src="../../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module2/blog-module2.html">
+                        <img
+                          src="../../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module3/blog-module3.html">
+                        <img
+                          src="../../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module4/blog-module4.html">
+                        <img
+                          src="../../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module5/blog-module5.html">
+                        <img
+                          src="../../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module6/blog-module6.html">
+                        <img
+                          src="../../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="../../quiz/quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-blog">
+        <section class="wrapper">
+            <h1 class="h1__wrapper">MODULE 2</h1>
+            <p class="p__wrapper">LES BASES DE L'ÉLECTRICITÉ</p>
+      
+            <div class="faq">
+              <button class="accordion">
+                C'est quoi “la charge électrique” ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Pour comprendre l’électricité, il faut tout d’abord commencer par l’atome.</p><br>
+                <p class="p__pannel">Un <strong>atome</strong> est la plus petite unité de matière. Il est composé de trois principales particules : <strong>les protons</strong>, <strong>les neutrons</strong> et <strong>les électrons</strong>. Les <strong>protons</strong> sont des particules qui ont une <strong>charge positive</strong> et qui se situent dans le noyau de l’atome. Les <strong>neutrons</strong> sont des particules qui n’ont <strong>pas de charge</strong>, on dit qu’ils sont <strong>électriquement neutres</strong> et ils se situent également dans le noyau de l’atome.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m2img1.png"
+                    width="350"
+                    height="200"
+                    alt="Inc Logo"
+                /><br>
+                <p class="p__pannel">Une <strong>charge électrique</strong> est un <strong>électron</strong>. Les électrons sont des particules de <strong>charge négative</strong> qui gravitent autour du noyau à des distances spécifiques, appelées niveaux d’énergie.</p><br>
+                <p class="p__pannel">La combinaison du nombre de protons et de neutrons dans le noyau détermine le type d’atome, c’est-à-dire l’élément auquel il correspond, tandis que le nombre d’électrons et leur arrangement autour du noyau déterminent ses propriétés chimiques. Généralement au sein d’un atome, on retrouve le même nombre de protons et d’électrons, ce qui implique que l’atome est électriquement neutre : sa charge est égale à zéro.</p><br>
+                <p class="p__pannel">Les atomes peuvent se combiner pour former des molécules, et ces molécules forment la matière que nous voyons et touchons au quotidien. Les atomes sont les briques de base de toute la matière de l’univers.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Et le “champ électrique”, c'est quoi ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Le <strong>champ électrique</strong> est une <strong>propriété de l'espace</strong> autour d'une charge électrique qui exerce une <strong>force</strong> sur les autres charges électriques. Il est représenté par des <strong>lignes de champ électrique</strong> qui indiquent la <strong>direction</strong> dans laquelle une charge positive se déplacerait si elle était placée dans ce champ.</p><br>
+                <p class="p__pannel">Le <strong>champ électrique E</strong> en un point est défini comme la force F que subirait une charge électrique q de test placée en ce point, divisée par la valeur de cette charge de test :</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m2img3.png"
+                    width="250"
+                    height="150"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">L’unité du champ électrique dans le système international est le <strong>volt par mètre (V/m)</strong>.</p><br>
+                <p class="p__pannel"><strong>Note :</strong></p>
+                <p class="p__pannel">Une <strong>force</strong> est une interaction physique qui peut modifier l'état de mouvement ou de repos d'un objet. Elle est caractérisée par sa magnitude, sa direction et son point d'application. Les forces peuvent être dues à des interactions gravitationnelles, électromagnétiques, ou résulter de contacts physiques entre objets.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Le potentiel et la tension.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Le <strong>potentiel électrique</strong>, également appelé simplement <strong>le potentiel</strong>, est une mesure de l'énergie électrique potentielle par unité de charge électrique en un point donné dans un champ électrique. Il est symbolisé par la lettre "V" et mesuré en <strong>volts (V)</strong>, tout comme la tension.</p><br>
+                <p class="p__pannel">La <strong>tension</strong>, symbolisée par la lettre "V" et mesurée en <strong>volts (V)</strong>, est une grandeur électrique qui représente la <strong>différence de potentiel électrique</strong> entre deux points dans un circuit électrique. Elle indique la quantité d'énergie potentielle électrique par unité de charge électrique (c'est-à-dire les électrons) entre ces deux points.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m2img4.png"
+                    width="400"
+                    height="250"
+                    alt="Inc Logo"
+                /><br>
+                <p class="p__pannel">En d'autres termes, <strong>la tension mesure la force qui pousse les électrons à se déplacer dans un circuit</strong>. Plus la tension est élevée, plus la force qui pousse les électrons est grande, et donc plus l'intensité du courant électrique est élevée. La tension est essentielle pour créer un flux de courant électrique dans un circuit. Elle peut être comparée à la <strong>pression dans un tuyau d'eau</strong> : une tension plus élevée correspond à une pression plus élevée, ce qui fait circuler l'eau (ou les électrons) plus rapidement.</p><br>
+                <p class="p__pannel">Lorsqu'un objet chargé est placé dans un champ électrique, il ressent une force électrique due à la différence de potentiel électrique entre les points de son trajet. L'objet se déplacera vers les zones de plus bas potentiel électrique, car il est attiré par l'énergie potentielle électrique plus faible.</p><br>
+                <p class="p__pannel">La tension est ce qui pousse les électrons dans un circuit. Sans tension, les électrons (libres) se déplacent au hasard dans n'importe quelle direction.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                L’énergie potentielle électrique.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">L’<strong>énergie potentielle électrique</strong> est une forme d'<strong>énergie</strong> liée à la disposition des charges électriques et à leur interaction mutuelle. Elle augmente avec la quantité de charges et diminue avec la distance entre elles.</p><br>
+                <p class="p__pannel">La formule de l'énergie potentielle électrique est donnée par : </p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m2img5.png"
+                    width="250"
+                    height="150"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">avec q la charge électrique en Coulombs (C), Epe l’énergie potentielle électrique en Joules (J) et V la tension électrique en volts (V).</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Le courant électrique.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Le <strong>courant électrique</strong> est le <strong>déplacement ordonné de charges électriques</strong>, généralement des électrons, <strong>à travers un conducteur</strong>. Il s'agit du flux de charges électriques dans un circuit électrique, créant ainsi un mouvement continu d'électricité. Le courant électrique est l'une des grandeurs électriques les plus fondamentales et est mesuré en <strong>ampères (A)</strong> dans le système international d'unités.</p><br>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m2img6.png"
+                    width="400"
+                    height="250"
+                    alt="Inc Logo"
+                /><br>
+                <p class="p__pannel">La <strong>convention</strong> pour la direction du courant électrique est du pôle positif au pôle négatif. Cela signifie que les électrons, qui ont une charge négative, se déplacent du pôle négatif au pôle positif. Cependant, dans de nombreux schémas de circuits, la flèche du courant est dessinée dans le sens inverse, du pôle positif au pôle négatif, ce qui est une convention historique.</p><br>
+                <p class="p__pannel">La différence entre le flux conventionnel et le flux réel d'électrons concerne la direction du courant électrique et la façon dont nous la représentons.</p><br>
+                <p class="p__pannel"><strong>Flux conventionnel :</strong></p><br>
+                <p class="p__pannel">Le flux conventionnel est une convention historique largement utilisée dans l'analyse des circuits électriques. Selon cette convention, le courant électrique est considéré comme un <strong>mouvement de charges positives</strong>, allant du pôle positif au pôle négatif de la source d'alimentation ou à travers un circuit. Cette convention a été établie bien avant que l'on ne comprenne pleinement le mouvement des électrons.</p><br>
+                <p class="p__pannel">En d'autres termes, dans le flux conventionnel, on imagine que les charges positives se déplacent dans la direction du courant, même si en réalité, ce sont les électrons (qui sont négatifs) qui se déplacent du pôle négatif au pôle positif. Cette convention a été adoptée pour simplifier la compréhension et les calculs des circuits électriques, car elle est plus intuitive et évite la confusion.</p><br>
+                <p class="p__pannel"><strong>Flux réel d'électrons :</strong></p><br>
+                <p class="p__pannel">Le flux réel d'électrons, en revanche, est la description du <strong>mouvement des électrons</strong>, qui sont négatifs et qui se déplacent réellement à travers un circuit d'un pôle négatif à un pôle positif. C'est la <strong>réalité du déplacement des particules chargées</strong> dans un fil conducteur.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m2img7.png"
+                    width="400"
+                    height="250"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Dans un circuit électrique, une source d'énergie, comme une pile ou une génératrice, fournit l'énergie nécessaire pour pousser les charges électriques à travers le circuit. Cette source crée une différence de potentiel électrique (tension) qui provoque le déplacement des charges.</p><br>
+                <p class="p__pannel">Le courant électrique se déplace à travers des matériaux conducteurs tels que les métaux (cuivre, aluminium) qui permettent aux électrons de se déplacer librement. Les matériaux isolants, en revanche, ne permettent pas un déplacement libre des charges.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Les conducteurs et isolants.
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Les conducteurs et les isolants sont deux types de <strong>matériaux</strong> qui réagissent de manière très différente à la conduction de l'électricité en raison de leur capacité à permettre ou à entraver le mouvement des charges électriques.</p><br>
+                <p class="p__pannel">Les <strong>conducteurs</strong> sont des matériaux qui permettent le <strong>mouvement facile des charges électriques</strong>, généralement des électrons.</p><br>
+                <p class="p__pannel">Cela signifie que les électrons peuvent se déplacer librement à travers le matériau en réponse à une différence de potentiel électrique (tension) appliquée. Les conducteurs ont des électrons libres en abondance, qui ne sont pas fortement liés aux atomes du matériau.</p><br>
+                <p class="p__pannel">Ces électrons libres peuvent se déplacer et constituer un courant électrique lorsqu'une tension est appliquée.</p><br>
+                <p class="p__pannel">Les métaux tels que le cuivre, l'aluminium, l'argent et l'or sont d'excellents conducteurs électriques. Ils sont largement utilisés dans les fils électriques et les composants électriques en raison de leur capacité à transporter l'électricité.</p><br>
+                <p class="p__pannel">Les <strong>isolants</strong> sont des matériaux qui <strong>ne permettent pas le mouvement facile des charges électriques</strong>. Ils sont très résistants à la conduction électrique, ce qui signifie que les électrons ne peuvent pas se déplacer librement à travers le matériau en réponse à une tension.</p><br>
+                <p class="p__pannel">Les électrons dans les isolants sont fortement liés aux atomes du matériau et ne se déplacent que très difficilement en réponse à une tension électrique.</p><br>
+                <p class="p__pannel">Cela signifie que les isolants ne soutiennent pas la formation d'un courant électrique significatif. Les isolants comprennent des matériaux tels que le plastique, le verre, le caoutchouc, le bois et la céramique.</p><br>
+                <p class="p__pannel">Ils sont couramment utilisés pour <strong>isoler et protéger les fils électriques</strong>, car ils empêchent les fuites de courant électrique non désirées.</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="blog-nav-btn">
+          <a href="../module1/blog-module1.html">
+            <button class="btn-landing">REVENIR AU MODULE PRÉCÉDENT</button>
+          </a>
+          <a href="../../quiz/module2/quiz-module2.html">
+            <button class="btn-landing">FAIRE LE QUIZ DU MODULE 2 </button>
+          </a>
+          <a href="../module3/blog-module3.html">
+            <button class="btn-landing">PASSER AU MODULE SUIVANT</button>
+          </a>
+        </section>
+
+        <footer>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../../../script.js"></script>
+    <script src="../blog.js"></script>
+</body>
+</html>

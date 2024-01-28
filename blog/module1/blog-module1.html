@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module1/blog-module1.html">
+                        <img
+                          src="../../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module2/blog-module2.html">
+                        <img
+                          src="../../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module3/blog-module3.html">
+                        <img
+                          src="../../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module4/blog-module4.html">
+                        <img
+                          src="../../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module5/blog-module5.html">
+                        <img
+                          src="../../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module6/blog-module6.html">
+                        <img
+                          src="../../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="../../quiz/quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-blog">
+        <section class="wrapper">
+            <h1 class="h1__wrapper">MODULE 1</h1>
+            <p class="p__wrapper">INTRODUCTION AU GÉNIE ÉLECTRIQUE</p>
+      
+            <div class="faq">
+              <button class="accordion">
+                C'est quoi l'électricité ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">L'<strong>électricité</strong> est une forme d'<strong>énergie qui résulte du mouvement des particules chargées</strong>, appelées <strong>électrons</strong>. Les électrons sont de minuscules particules qui tournent autour du noyau des atomes, et ils portent une <strong>charge électrique négative</strong>.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m1img1.png"
+                    width="200"
+                    height="100"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Lorsqu'ils se déplacent à travers un conducteur, comme un fil métallique, ils créent un flux de <strong>courant électrique</strong>.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m1img2.png"
+                    width="200"
+                    height="100"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Pour comprendre l'électricité de façon simple, il faut avoir en tête les notions suivantes :</p><br>
+                <p class="p__pannel"><strong>1. Charge électrique :</strong> Les électrons ont une charge négative, tandis que les noyaux d'atomes ont une charge positive. Les objets peuvent être chargés positivement, négativement ou neutres en fonction du nombre d'électrons par rapport aux protons dans leurs atomes.</p><br>
+                <p class="p__pannel"><strong>2. Courant électrique :</strong> Le courant électrique est le déplacement d'électrons à travers un conducteur, tel qu'un fil. Il est mesuré en ampères (A) et indique la quantité d'électrons qui passe par unité de temps.</p><br>
+                <p class="p__pannel"><strong>3. Tension électrique :</strong> La tension électrique, souvent appelée tension ou différence de potentiel, est la force qui pousse les électrons à travers un circuit. Elle est mesurée en volts (V).</p><br>
+                <p class="p__pannel"><strong>4. Circuit électrique :</strong> Un circuit électrique est un chemin fermé qui permet aux électrons de circuler. Il est composé de composants tels que des fils, des interrupteurs, des résistances, des condensateurs et des composants actifs tels que des lampes ou des appareils électroniques.</p><br>
+                <p class="p__pannel"><strong>5. Applications :</strong> L'électricité est utilisée dans une multitude d'applications, de l'éclairage domestique à l'alimentation des appareils électroniques, des moteurs électriques aux télécommunications. Elle est essentielle dans la vie moderne. </p><br>
+                <p class="p__pannel"><strong>6. Production d'électricité :</strong> L'électricité est générée dans des centrales électriques à partir de diverses sources d'énergie, telles que le charbon, le gaz naturel, le nucléaire, l'hydroélectricité, l'énergie solaire et éolienne.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                C'est quoi le génie électrique ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Le <strong>génie électrique</strong> est une branche de l'ingénierie qui se concentre sur l'étude, la conception, la production et la gestion des <strong>systèmes électriques</strong>, des dispositifs et des technologies. Il englobe un large éventail de domaines liés à <strong>l'électricité</strong> et à <strong>l'électronique</strong>.</p><br>
+                <p class="p__pannel">Le <strong>génie électrique</strong> englobe une variété de domaines d'application qui façonnent notre monde moderne. Les ingénieurs électriciens jouent un rôle essentiel dans la conception de systèmes électriques complexes, incluant des réseaux électriques, des systèmes de contrôle, des systèmes de communication et des circuits électroniques. Ils planifient la distribution de l'électricité, développent des schémas de câblage et conçoivent des systèmes de sécurité électrique.</p>
+                <img
+                    class="img__faq m1img4"
+                    src="../../images/modules/m1img4.png"
+                    width="500"
+                    height="300"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Le domaine englobe également la production, la distribution et la gestion de <strong>l'énergie électrique</strong>, allant des centrales électriques aux énergies renouvelables. Les <strong>ingénieurs électriens</strong> sont impliqués dans l'électronique, la conception de circuits et de dispositifs électroniques, ainsi que dans les télécommunications, concevant des réseaux de communication et des systèmes de transmission de données.</p><br>
+                <p class="p__pannel">Le génie électrique s'étend également aux systèmes de contrôle automatisés utilisés dans diverses industries, à l'intersection de l'informatique et du génie logiciel. Les ingénieurs électriens sont également responsables de la <strong>sécurité électrique</strong>, minimisant les risques potentiels.</p><br>
+                <p class="p__pannel">En réponse à l'accent sur la <strong>durabilité</strong>, de nombreux professionnels du génie électrique se concentrent sur le développement de solutions d'énergies renouvelables et d'efficacité énergétique pour atténuer l'impact environnemental.</p>
+              </div>
+            </div>
+      
+            <div class="faq">
+              <button class="accordion">
+                Pourquoi le génie électrique est un domaine important dans nos sociétés actuelles ?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="pannel">
+                <p class="p__pannel">Le <strong>génie électrique</strong> est un domaine crucial dans nos sociétés actuelles en raison de son <strong>impact profond sur de nombreux aspects de notre vie quotidienne</strong>, des technologies que nous utilisons aux infrastructures essentielles qui soutiennent nos sociétés.</p><br>
+                <p class="p__pannel">Le génie électrique a été un <strong>acteur majeur</strong> dans la création et l'avancement d'appareils électroniques, allant des ordinateurs personnels aux smartphones, en passant par les dispositifs médicaux et les équipements de communication. De plus, les ingénieurs électriciens contribuent significativement à la conception de <strong>centrales électriques</strong>, au développement de technologies <strong>d'énergies renouvelables</strong>, et à la mise en place de <strong>réseaux électriques</strong> qui alimentent nos foyers, nos entreprises, et nos infrastructures.</p>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m1img6.png"
+                    width="350"
+                    height="200"
+                    alt="Inc Logo"
+                />
+                <p class="p__pannel">Les <strong>systèmes électriques</strong> constituent le socle des infrastructures essentielles, allant de l'éclairage des rues à l'alimentation des hôpitaux, des écoles aux centres de données. Le génie électrique assure la <strong>fiabilité et la sécurité</strong> de ces systèmes critiques, tandis qu'il s'impose également dans le domaine médical en étant essentiel à la conception d'équipements de diagnostic et de traitement, tels que les scanners, les dispositifs de surveillance médicale et les technologies d'imagerie.</p><br>
+                <p class="p__pannel">Les <strong>technologies de communication</strong> contemporaines, comprenant les réseaux de télécommunications et Internet, reposent sur les fondements solides du génie électrique. Les ingénieurs électriens jouent un rôle crucial dans le développement de réseaux de communication haut débit, de la 5G aux câbles sous-marins.</p><br>
+                <p class="p__pannel">Sur le plan économique, le secteur du génie électrique représente un moteur significatif, générant des emplois et stimulant l'innovation. Les professionnels du génie électrique contribuent à la <strong>croissance économique</strong> en développant de nouvelles technologies et en améliorant les infrastructures existantes.</p><br>
+                <img
+                    class="img__faq"
+                    src="../../images/modules/m1img5.png"
+                    width="350"
+                    height="200"
+                    alt="Inc Logo"
+                /><br>
+                <p class="p__pannel">En réponse à l'accent croissant sur la <strong>durabilité</strong>, le génie électrique joue un rôle clé dans le développement de solutions énergétiques durables. Cela inclut l'exploration des <strong>énergies renouvelables</strong>, la <strong>gestion intelligente de l'énergie</strong>, et le déploiement de technologies d'<strong>efficacité énergétique</strong>.</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="blog-nav-btn">
+          <a href="../../quiz/module1/quiz-module1.html">
+            <button class="btn-landing">FAIRE LE QUIZ DU MODULE 1 </button>
+          </a>
+          <a href="../module2/blog-module2.html">
+            <button class="btn-landing">PASSER AU MODULE SUIVANT</button>
+          </a>
+        </section>
+
+        <footer>
+            <ul class="footer-links">
+              <li>
+                <a href="../../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../../../script.js"></script>
+    <script src="../blog.js"></script>
+</body>
+</html>
