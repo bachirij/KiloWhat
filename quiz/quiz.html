@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Page d'accueil</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog/blog.css">
+    <!-- Liaison vers la bibliothèque d'icônes Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../blog/module1/blog-module1.html">
+                        <img
+                          src="../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../blog/module2/blog-module2.html">
+                        <img
+                          src="../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../blog/module3/blog-module3.html">
+                        <img
+                          src="../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../blog/module4/blog-module4.html">
+                        <img
+                          src="../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../blog/module5/blog-module5.html">
+                        <img
+                          src="../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../blog/module6/blog-module6.html">
+                        <img
+                          src="../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="blog-landing">
+        <h1 class="h1__blog-landing">Explorez le Génie Électrique à travers nos Quiz interactifs !</h1>
+        <p class="p__blog-landing">Découvrez et approfondissez vos connaissances en génie électrique grâce à nos modules de quiz interactifs.</p>
+        <p class="p__blog-landing">Plongez-vous dans le monde fascinant de l'électricité et des circuits.</p>
+      </section>
+
+      <section class="blog-modules">
+        <div class="blog-module">
+          <img class="img__card__blog" 
+                      src="../images/carousel/carte1.png"
+                      width="100"
+                      height="100" />
+          <h2 class="card-blog-title">Introduction au génie électrique</h2>
+          <div class="card-blog-content">
+              <p class="p__card-blog">Testez votre compréhension du génie électrique avec notre quiz d'introduction. Pensez-vous déjà maîtriser l'histoire fascinante de l'électricité et ses fondements ? Révélez-le maintenant !</p>
+              <a href="module1/quiz-module1.html" class="button">Commencer le Quiz</a>
+          </div>
+        </div>
+        <div class="blog-module">
+          <img class="img__card__blog" 
+                      src="../images/carousel/carte2.png"
+                      width="100"
+                      height="100" />
+          <h2 class="card-blog-title">Les bases de l'électricité</h2>
+          <div class="card-blog-content">
+              <p class="p__card-blog">Évaluez vos connaissances sur les bases de l'électricité avec notre quiz dédié. Pensez-vous pouvoir naviguer avec succès à travers les charges électriques et les lois fondamentales ? Testez-vous dès maintenant !</p>
+              <a href="module2/quiz-module2.html" class="button">Commencer le Quiz</a>
+          </div>
+        </div>
+        <div class="blog-module">
+          <img class="img__card__blog" 
+                      src="../images/carousel/carte3.png"
+                      width="100"
+                      height="100" />
+          <h2 class="card-blog-title">Les bases des circuits électriques</h2>
+          <div class="card-blog-content">
+              <p class="p__card-blog">Mesurez votre expertise dans les circuits électriques avec notre quiz interactif. Êtes-vous prêt à démontrer votre maîtrise des connexions et des circuits ? Mettez vos connaissances à l'épreuve dès aujourd'hui !</p>
+              <a href="module3/quiz-module3.html" class="button">Commencer le Quiz</a>
+          </div>
+        </div>
+        <div class="blog-module">
+          <img class="img__card__blog" 
+                      src="../images/carousel/carte4.png"
+                      width="100"
+                      height="100" />
+          <h2 class="card-blog-title">Les composants des circuits électriques</h2>
+          <div class="card-blog-content">
+              <p class="p__card-blog">Découvrez votre niveau de maîtrise des composants de circuits électriques grâce à notre quiz détaillé. Pensez-vous pouvoir identifier et comprendre le rôle de chaque élément ? Testez-vous maintenant !</p>
+              <a href="module4/quiz-module4.html" class="button">Commencer le Quiz</a>
+          </div>
+        </div>
+        <div class="blog-module">
+          <img class="img__card__blog" 
+                      src="../images/carousel/carte5.png"
+                      width="100"
+                      height="100" />
+          <h2 class="card-blog-title">Le magnétisme</h2>
+          <div class="card-blog-content">
+              <p class="p__card-blog">Évaluez vos connaissances en magnétisme avec notre quiz interactif. Pensez-vous tout savoir sur les lois magnétiques et les domaines magnétiques ? Démontrez-le dès aujourd'hui !</p>
+              <a href="module5/quiz-module5.html" class="button">Commencer le Quiz</a>
+          </div>
+        </div>
+        <div class="blog-module">
+          <img class="img__card__blog" 
+                      src="../images/carousel/carte6.png"
+                      width="100"
+                      height="100" />
+          <h2 class="card-blog-title">Les réseaux électriques</h2>
+          <div class="card-blog-content">
+              <p class="p__card-blog">Testez votre compréhension des réseaux électriques avec notre quiz dédié. Êtes-vous prêt à relever les défis de la gestion des réseaux et à montrer votre expertise ? Faites le quiz maintenant !</p>
+              <a href="module6/quiz-module6.html" class="button">Commencer le Quiz</a>
+          </div>
+        </div>
+      </section>
+
+        <footer>
+            <ul class="footer-links">
+              <li>
+                <a href="../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

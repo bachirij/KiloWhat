@@ -1,0 +1,565 @@
+:root {
+    --dark-grey: #333333;
+    --medium-grey: #636363;
+    --light-grey: #eeeeee;
+    --ash: #f4f4f4;
+    --primary-color: #334080;
+    --secondary-color: #F5C400;
+    --white: white;
+    --border: 1px solid var(--light-grey);
+    --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+/** LANDING SECTION **/
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh; 
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 30px 0px 0px 80px;
+    align-content: space-around;
+}
+
+.landing-text {
+    z-index: 1;
+    max-width: 50%;
+    padding: 50px 30px 0 0;
+}
+
+.h1__landing {
+    font-size: 3.3rem;
+    margin: 2rem auto 1rem;
+    line-height: 1;
+}
+
+.btn-landing {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.img__landing {
+    width: 670px;
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+
+.btn-landing:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    /* Format tablette */
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+
+    .landing-text,
+    .landing-img {
+        max-width: 100%;
+    }
+
+    .h1__landing {
+        font-size: 2.5rem;
+    }
+
+    .img__landing {
+        width: 560px;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Format téléphone */
+    .landing {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0;
+    }
+
+    .landing-text,
+    .landing-img {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .h1__landing {
+        font-size: 2rem;
+    }
+
+    .img__landing {
+        width: 380px;
+        height: 350px;
+        padding: 0;
+    }
+
+    .btn-landing {
+        display: inline-block;
+        padding: 8px 18px;
+        font-size: 14px;
+        background-color: var(--secondary-color);
+        color: var(--white);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+}
+
+/** INFO SECTION **/
+
+.landing-info {
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh; 
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 50px 0px 30px 50px;
+}
+
+.landing-info-text {
+    z-index: 1;
+    max-width: 60%;
+    padding: 0 0 0 50px;
+}
+
+.h1__landing-info {
+    font-size: 2.8rem;
+    line-height: 1;
+    padding: 10px 0 10px 0;
+}
+
+.p__landing-info {
+    font-size: 1.5rem;
+    padding: 20px 0 15px 0;
+}
+
+.btn__landing {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.img__landing-info {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.btn__landing:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .landing-info {
+        flex-direction: column-reverse;
+        padding: 50px 50px 30px 50px;
+    }
+    
+    .landing-info-text {
+        max-width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .h1__landing-info {
+        font-size: 2rem;
+        line-height: 1;
+        padding: 10px 0 10px 0;
+    }
+    
+    .p__landing-info {
+        font-size: 1.4rem;
+        padding: 10px 0 10px 0;
+    }
+    
+    .btn__landing {
+        padding: 8px 18px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    
+    .img__landing-info {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .landing-info {
+        flex-direction: column-reverse;
+        padding: 30px;
+    }
+    
+    .landing-info-text {
+        max-width: 100%;
+        padding: 0 0 0 0;
+    }
+    
+    .h1__landing-info {
+        font-size: 1.6rem;
+        line-height: 1;
+        padding: 10px 0 10px 0;
+    }
+    
+    .p__landing-info {
+        font-size: 1.1rem;
+        padding: 10px 0 10px 0;
+    }
+    
+    .btn__landing {
+        padding: 8px 18px;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    
+    .img__landing-info {
+        width: 400px;
+        height: 400px;
+        padding-top: 30px;
+    }
+}
+
+/** CAROUSEL SECTION **/
+
+.carousel {
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px 40px 20px;
+}
+
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: 0 0 1.5rem;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.carousel-item {
+    display: inline-block;
+    flex: 0 0 calc((100% - 5rem) / 4);
+    margin-left: 1rem;
+    scroll-snap-align: start;
+    padding-bottom: 15px;
+}
+
+.card {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--light-grey);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.img__card {
+    height: auto;
+    margin-bottom: .5rem;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h1__carousel {
+    font-size: 2rem;
+    margin: 2rem auto 1rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.p__carousel {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.p__card {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.title-center {
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    color: var(--white);
+    cursor: pointer;
+    padding: 0.25rem 0.75rem;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    border: var(--primary-color);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    background-color: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-grey);
+    border-radius: 3px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .carousel {
+        padding: 30px 20px 30px 20px;
+    }
+    
+    .carousel-item {
+        flex: 0 0 calc((100% - 5rem) / 3);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel {
+        padding: 30px 20px 30px 20px;
+    }
+    
+    .carousel-item {
+        flex: 0 0 calc((100% - 5rem) / 1);
+    }
+}
+
+/** QUIZ SECTION **/
+
+.quiz-section {
+    background-color: var(--white);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh; 
+    padding: 30px;
+}
+
+.quiz-text {
+    z-index: 1;
+    max-width: 65%;
+    padding: 40px 0 0 30px;
+}
+
+.h1__quiz {
+    font-size: 2.5rem;
+    line-height: 1;
+    padding: 20px 0 10px 0;
+}
+
+.p__quiz {
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+}
+
+.img__quiz {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.quiz-img {
+    padding-left: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .quiz-section {
+        flex-direction: column;
+        padding: 0px 30px 10px 30px;
+    }
+
+    .quiz-text,
+    .quiz-img {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .h1__quiz {
+        font-size: 1.6rem;
+    }
+
+    .img__quiz {
+        width: 300px;
+        height: 300px;
+    }
+
+    .p__quiz {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .quiz-section {
+        flex-direction: column;
+        padding: 0px 30px 10px 30px;
+    }
+
+    .quiz-text,
+    .quiz-img {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .h1__quiz {
+        font-size: 1.4rem;
+    }
+
+    .img__quiz {
+        width: 300px;
+        height: 300px;
+    }
+
+    .p__quiz {
+        font-size: 1.1rem;
+    }
+}
+
+/** CHATBOT SECTION **/
+
+.chatbot-section {
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    min-height: 70vh; 
+    padding: 50px 0 0 30px;
+}
+
+.chatbot-text {
+    z-index: 1;
+    max-width: 65%;
+    padding: 40px 0 0 30px;
+}
+
+.h1__chatbot {
+    font-size: 2.5rem;
+    line-height: 1;
+    padding: 20px 0 10px 0;
+}
+
+.p__chatbot {
+    font-size: 1.3rem;
+    padding: 10px 0 10px 0;
+}
+
+.img__chatbot {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    padding-right: 20px;
+}
+
+.chatbot-img {
+    padding-left: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .chatbot-section {
+        flex-direction: column-reverse;
+        padding: 0 0 30px 30px;
+    }
+
+    .chatbot-text,
+    .chatbot-img {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .h1__chatbot {
+        font-size: 1.6rem;
+        padding-top: 20px;
+    }
+
+    .img__chatbot {
+        width: 300px;
+        height: 300px;
+    }
+
+    .p__chatbot {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .chatbot-section {
+        flex-direction: column-reverse;
+        padding: 0 0 30px 30px;
+    }
+
+    .chatbot-text,
+    .chatbot-img {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    .h1__chatbot {
+        font-size: 1.4rem;
+        padding-top: 20px;
+    }
+
+    .img__chatbot {
+        width: 250px;
+        height: 250px;
+    }
+
+    .p__chatbot {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Module 4</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../quiz.css">
+    <!-- Liaison vers la bibliothèque d'icônes Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <header>
+        <!-- Conteneur principal -->
+      <div class="container">
+        <!-- Partie gauche de la navigation -->
+        <div class="nav-start">
+          <!-- Logo avec lien vers la page d'accueil -->
+          <a class="logo" href="../../index.html">
+            <!-- Image du logo avec le lien de sa source -->
+            <img
+              src="../../images/logo.png"
+              width="100"
+              height="100"
+              alt="Inc Logo"
+            />
+          </a>
+          <!-- Menu de navigation -->
+          <nav class="menu">
+            <!-- Liste des liens de navigation -->
+            <ul class="menu-bar">
+              <!-- Lien avec le menu déroulant -->
+              <li>
+                <!-- Bouton qui contient le lien vers la page de blog -->
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Le Blog
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <!-- Menu déroulant -->
+                <div id="dropdown1" class="dropdown">
+                  <!-- Liste des articles du blog -->
+                  <ul role="menu">
+                    <!-- Lien vers la page du module 1 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module1/blog-module1.html">
+                        <img
+                          src="../../images/blog-icons/electricity-svgrepo-com-2.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 1</span>
+                          <p>Introduction au génie électrique</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 2 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module2/blog-module2.html">
+                        <img
+                          src="../../images/blog-icons/battery-energy-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 2</span>
+                          <p>Les bases de l'électricité</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 3 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module3/blog-module3.html">
+                        <img
+                          src="../../images/blog-icons/resistor-svgrepo-com-3.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 3</span>
+                          <p>Les bases des circuits électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 4 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module4/blog-module4.html">
+                        <img
+                          src="../../images/blog-icons/inductor-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 4</span>
+                          <p>Les composants électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 5 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module5/blog-module5.html">
+                        <img
+                          src="../../images/blog-icons/magnet-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 5</span>
+                          <p>Le magnétisme</p>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- Lien vers la page du module 6 -->
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="../../blog/module6/blog-module6.html">
+                        <img
+                          src="../../images/blog-icons/electric-tower-tower-svgrepo-com.svg"
+                          width="40"
+                          height="40"
+                          class="icon"
+                        />
+                        <div>
+                          <span class="dropdown-link-title">Module 6</span>
+                          <p>Les réseaux électriques</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- Autres liens de navigation (qui ne sont pas des menus déroulants) -->
+              <li><a class="nav-link" href="../quiz.html">Quiz</a></li>
+              <li><a class="nav-link" href="../../chatbot/chatbot.html">ChatBot</a></li>
+              <li><a class="nav-link" href="../../a-propos/a-propos.html">A propos</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Partie droite de la navigation -->
+        <div class="nav-end">
+          <!-- Bouton de menu hamburger pour les petits écrans (téléphones) -->
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="quiz-module-title">
+        <h1 class="h1__quiz-module-title">Teste tes connaissances<br>sur les composants des circuits électriques.</h1>
+      </section>
+      <!-- Bouton commencer le Quiz -->
+        <section class="quiz">
+          <div class="start_btn"><button>Commencer le Quiz</button></div>
+          
+          <!-- Info Box -->
+          <div class="info_box">
+            <div class="info-title"><span>Règles du Quiz</span></div>
+            <div class="info-list">
+              <div class="info">1. Tu as seulement <span>15 secondes</span> par question.</div>
+              <div class="info">2. Une fois que tu as choisi une réponse, tu ne peux pas la changer.</div>
+              <div class="info">3. Tu ne peux plus sélectionner de réponse une fois que le temps s'est écoulé.</div>
+              <div class="info">4. Si tu quittes le quiz, tu devras recommencer depuis le début.</div>
+              <div class="info">5. Il y a seulement une réponse possible par question.</div>
+            </div>
+            <div class="buttons">
+              <button class="quit">Quitter</button>
+              <button class="restart">Continuer</button>
+            </div>
+          </div>
+          
+          <!-- Quiz Box -->
+          <div class="quiz_box">
+            <div class="header-quiz">
+              <div class="title">Module 4</div>
+              <div class="timer">
+                <div class="time_left_txt">Temps</div>
+                <div class="timer_sec">15</div>
+              </div>
+              <div class="time_line"></div>
+            </div>
+            <section class="section-quiz_box">
+              <div class="que_text">
+              </div>
+              <div class="option_list">
+              </div>
+            </section>
+            
+            <div class="footer-quiz">
+              <div class="total_que">
+              </div>
+              <button class="next_btn">Prochaine question</button>
+            </div>
+          </div>
+          
+          <!-- Result Box -->
+          <div class="result_box">
+            <div class="icon">
+              <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">Tu as terminé le Quiz !</div>
+            <div class="score_text">
+            </div>
+            <div class="buttons">
+              <button class="restart">Recommencer</button>
+              <button class="quit">Quitter</button>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <ul class="footer-links">
+            <li>
+              <a href="../../index.html">Accueil</a>
+              </li>
+              <li>
+                <a href="../../a-propos/a-propos.html">A propos</a>
+              </li>
+              <li>
+                <a href="#">Politique de confidentialité</a>
+              </li>
+            </ul>
+            <p class="footer-copyright">KiloWhat © 2024</p>
+          </footer>
+    </main>
+
+    <script src="../../script.js"></script>
+    <script src="../quiz.js"></script>
+    <script src="questions4.js"></script>
+</body>
+</html>
